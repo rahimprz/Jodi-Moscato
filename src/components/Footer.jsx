@@ -54,13 +54,22 @@ export default function Footer({ setCurrentPage }) {
           <div className="lg:col-span-1 space-y-4">
             <button
               onClick={() => handleLinkClick('home')}
-              className="bg-white/95 backdrop-blur-md p-2.5 rounded-2xl inline-block shadow-md hover:scale-105 transition-transform text-left"
+              className="bg-white/95 backdrop-blur-md p-2.5 rounded-2xl inline-flex shadow-md hover:scale-105 transition-transform text-left"
+              aria-label="Jodi Moscato Home"
             >
               <img
                 src={DEFAULT_BOOK_INFO.logoUrl}
                 alt="Jodi Moscato Logo"
                 className="h-10 sm:h-12 w-auto object-contain"
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'flex';
+                }}
               />
+              <div className="hidden items-center gap-2 font-serif font-bold text-xl sm:text-2xl text-gray-900 px-1">
+                <span className="text-secondary text-2xl animate-spin">✦</span>
+                <span>Jodi <span className="text-primary">Moscato</span></span>
+              </div>
             </button>
 
             <p className="text-white/85 text-sm leading-relaxed max-w-sm">
