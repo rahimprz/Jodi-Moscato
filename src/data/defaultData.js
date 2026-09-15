@@ -244,11 +244,6 @@ export const FAQS = [
     category: "Educators"
   },
   {
-    q: "Does Jodi Moscato do school visits or virtual guest readings?",
-    a: "Yes! Jodi frequently visits elementary schools, public libraries, and educational podcasts both virtually and in-person. You can submit a booking request through our Contact page.",
-    category: "Educators"
-  },
-  {
     q: "Will this book scare my child or make them anxious about tech?",
     a: "Not at all. The book is specifically written with warmth, humor, and positivity. It frames digital safety not as a scary danger zone, but as empowering superhero skills that make exploring the internet fun and safe.",
     category: "Parents"

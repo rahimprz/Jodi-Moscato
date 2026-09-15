@@ -170,7 +170,7 @@ export default function Navbar({ currentPage, setCurrentPage, onOpenSearch, onOp
                 onClick={() => handleNavClick('contacts')}
                 className="w-full btn-p py-2.5 justify-center text-sm font-bold"
               >
-                Contact & School Visits
+                Get in Touch
               </button>
             </div>
           </div>

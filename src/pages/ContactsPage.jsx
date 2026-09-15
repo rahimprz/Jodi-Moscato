@@ -162,10 +162,6 @@ export default function ContactsPage({ setCurrentPage }) {
               <div className="pt-4 border-t border-white/20 space-y-2">
                 <div className="flex items-center gap-2 text-xs text-white/90">
                   <CheckCircle2 className="w-4 h-4 text-secondary" />
-                  <span>Virtual & In-Person Elementary School Visits</span>
-                </div>
-                <div className="flex items-center gap-2 text-xs text-white/90">
-                  <CheckCircle2 className="w-4 h-4 text-secondary" />
                   <span>Bulk Classroom & Library Orders</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs text-white/90">
@@ -284,7 +280,7 @@ export default function ContactsPage({ setCurrentPage }) {
                       name="subject"
                       value={formData.subject}
                       onChange={handleChange}
-                      placeholder="e.g. School Author Visit / Book Question"
+                      placeholder="e.g. Book Question or Classroom Order"
                       className="w-full px-4 py-3 rounded-2xl bg-gray-50 border border-gray-200 text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-primary transition"
                     />
                   </div>

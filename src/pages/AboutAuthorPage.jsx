@@ -1,14 +1,12 @@
 import React from 'react';
-import { 
-  Sparkles, 
-  Award, 
-  BookOpen, 
-  Heart, 
-  GraduationCap, 
-  Compass, 
-  CheckCircle2, 
-  Mail, 
-  Calendar, 
+import {
+  Sparkles,
+  Award,
+  BookOpen,
+  Heart,
+  GraduationCap,
+  Compass,
+  CheckCircle2,
   MessageSquare,
   Star
 } from 'lucide-react';
@@ -33,8 +31,8 @@ export default function AboutAuthorPage({ setCurrentPage }) {
     },
     {
       year: "Today",
-      title: "Classroom Visits & Speaking Tours",
-      desc: "Collaborating with elementary schools, public libraries, and parenting networks nationwide to build safe digital communities."
+      title: "Growing the Malex Community",
+      desc: "Connecting with parents, teachers, and libraries nationwide to help kids build safe, confident digital habits."
     }
   ];
 
@@ -138,18 +136,17 @@ export default function AboutAuthorPage({ setCurrentPage }) {
             {/* CTAs */}
             <div className="flex flex-wrap items-center gap-4 pt-4">
               <button
-                onClick={() => setCurrentPage('contacts')}
-                className="btn-p text-sm py-3 px-6 shadow-md"
-              >
-                <Calendar className="w-4 h-4" />
-                Book Jodi for a School Visit
-              </button>
-              <button
                 onClick={() => setCurrentPage('about-book')}
-                className="btn-s text-sm py-3 px-6 text-accent"
+                className="btn-p text-sm py-3 px-6 shadow-md"
               >
                 <BookOpen className="w-4 h-4" />
                 Explore Her Book
+              </button>
+              <button
+                onClick={() => setCurrentPage('contacts')}
+                className="btn-s text-sm py-3 px-6 text-accent"
+              >
+                Get in Touch
               </button>
             </div>
 
@@ -170,7 +167,7 @@ export default function AboutAuthorPage({ setCurrentPage }) {
               Jodi's Mission & <span className="text-primary">Journey</span>
             </h2>
             <p className="text-gray-600 text-sm sm:text-base">
-              From classroom teacher to published author and national speaker on children's digital wellbeing.
+              From classroom teacher to published author, championing children's digital wellbeing.
             </p>
           </div>
 
@@ -194,35 +191,6 @@ export default function AboutAuthorPage({ setCurrentPage }) {
               </div>
             ))}
           </div>
-
-        </div>
-      </section>
-
-      {/* =========================================================================
-          CLASSROOM VISITS & SPEAKING CARD
-         ========================================================================= */}
-      <section className="py-12 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gradient-to-br from-amber-400 via-orange-400 to-coral rounded-3xl p-8 sm:p-12 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
-          
-          <div className="space-y-3 max-w-lg">
-            <span className="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full font-fun">
-              Speaking & School Visits
-            </span>
-            <h3 className="text-2xl sm:text-3xl font-serif font-bold">
-              Bring Jodi to Your School or Library!
-            </h3>
-            <p className="text-white/90 text-sm leading-relaxed">
-              Jodi conducts interactive readings, hands-on password games, and Q&A sessions both in-person and virtually across the country.
-            </p>
-          </div>
-
-          <button
-            onClick={() => setCurrentPage('contacts')}
-            className="px-6 py-3.5 rounded-2xl bg-white hover:bg-gray-50 text-gray-950 font-bold text-sm shadow-md transition whitespace-nowrap flex items-center gap-2 hover:scale-105"
-          >
-            <Mail className="w-4 h-4 text-coral" />
-            <span>Inquire About Author Visits</span>
-          </button>
 
         </div>
       </section>

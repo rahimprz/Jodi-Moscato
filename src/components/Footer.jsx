@@ -175,7 +175,7 @@ export default function Footer({ setCurrentPage }) {
                   onClick={() => handleLinkClick('contacts')}
                   className="px-4 py-2 rounded-xl bg-white/20 hover:bg-white/30 text-white font-semibold text-xs transition flex items-center gap-2"
                 >
-                  <span>Book Author Visit / Q&A</span>
+                  <span>Contact Jodi</span>
                 </button>
               </div>
             </div>
